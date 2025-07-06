@@ -1,0 +1,45 @@
+{
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cra-template": "1.2.0",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.2",
+    "react-scripts": "5.0.1",
+    "socket.io-client": "^4.8.1"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build; cd src; npx tailwindcss -i tailwind_input.css -o tailwind.css",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "npx eslint src/ --fix",
+    "lint-nofix": "npx eslint src/",
+    "tailwind": "cd src; npx tailwindcss -i tailwind_input.css -o tailwind.css --watch"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.6.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.11.0"
+  }
+}
